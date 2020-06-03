@@ -19,6 +19,10 @@ class School
   end
   
   def sort
-    @roster.sort
+    sorted_hash = {}
+    @roster.each do |key, value|
+      sorted_hash[key] = value.sort
+    end
+    sorted_hash
   end
 end
