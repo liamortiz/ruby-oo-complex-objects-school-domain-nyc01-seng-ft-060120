@@ -19,6 +19,6 @@ class School
   end
   
   def sort
-    @roster.sort_by { |w| w[0].match?(/[A-Z]/) ? 0 : 1 }
+    @roster.sort_by {}
   end
 end
