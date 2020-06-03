@@ -15,7 +15,7 @@ class School
   end
   
   def grade(grade)
-    @roster.select{|g| g == grade}
+    @roster[grade]
   end
   
   def sort
